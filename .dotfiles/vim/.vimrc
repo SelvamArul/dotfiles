@@ -80,18 +80,19 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
+
 let g:sonokai_style = 'atlantis'
 colorscheme sonokai
 
 " refresh NERDTree automatically
-map <C-n> :call NERDTreeToggleAndRefresh()<CR>
+" map <C-n> :call NERDTreeToggleAndRefresh()<CR>
 
-function NERDTreeToggleAndRefresh()
-  :NERDTreeToggle
-  if g:NERDTree.IsOpen()
-    :NERDTreeRefreshRoot
-  endif
-endfunction
+" function NERDTreeToggleAndRefresh()
+"   :NERDTreeToggle
+"   if g:NERDTree.IsOpen()
+"     :NERDTreeRefreshRoot
+"   endif
+" endfunction
 " refresh NERDTree automatically
 
 " Use ctrl-[hjkl] to select the active split!
