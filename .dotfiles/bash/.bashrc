@@ -201,8 +201,12 @@ shopt -s histappend
 # After each command, append to the history file and reread it
 # PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
+if [ "$HOSTNAME" == "flanders"  ]; then
+    source activate py3.6
+elif [ "HOSTNAME" == "cuda12" ]; then
+    source tracking
+fi
 
-source activate py3.6
 alias ccat='pygmentize -g'
 alias rc="ssh periyasa@cuda12"
 alias lor="cd /home/periyasa/workspace/learning_object_reconstruction"
