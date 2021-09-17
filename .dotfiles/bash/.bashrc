@@ -121,7 +121,7 @@ fi
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 
-if [ "HOSTNAME" == "flanders" ]; then
+if [ "$HOSTNAME" == "flanders" ]; then
     __conda_setup="$('/home/periyasa/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
      if [ $? -eq 0 ]; then
          eval "$__conda_setup"
@@ -133,14 +133,14 @@ if [ "HOSTNAME" == "flanders" ]; then
         fi
      fi
 else
-    __conda_setup="$('/home/periyasa/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+    __conda_setup="$('/home/user/periyasa/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
     if [ $? -eq 0 ]; then
          eval "$__conda_setup"
     else
-        if [ -f "/home/periyasa/anaconda3/etc/profile.d/conda.sh" ]; then
-            . "/home/periyasa/anaconda3/etc/profile.d/conda.sh"
+        if [ -f "/home/user/periyasa/anaconda3/etc/profile.d/conda.sh" ]; then
+            . "/home/user/periyasa/anaconda3/etc/profile.d/conda.sh"
         else
-            export PATH="/home/periyasa/anaconda3/bin:$PATH"
+            export PATH="/home/user/periyasa/anaconda3/bin:$PATH"
         fi
     fi
 fi
@@ -218,8 +218,8 @@ shopt -s histappend
 
 if [ "$HOSTNAME" == "flanders"  ]; then
     source activate py3.6
-elif [ "HOSTNAME" == "cuda12" ]; then
-    source tracking
+elif [ "$HOSTNAME" == "cuda12" ]; then
+    source activate tracking
 fi
 
 alias ccat='pygmentize -g'
