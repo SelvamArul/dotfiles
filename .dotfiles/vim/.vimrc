@@ -35,7 +35,7 @@ set confirm " confirm :q in case of unsaved changes
 set incsearch " do incremental search
 set smartcase " ...unless capital letters are used
 
-map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
 set tabstop=4
 set shiftwidth=4
 
