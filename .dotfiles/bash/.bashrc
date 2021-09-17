@@ -191,10 +191,6 @@ xelatex -interaction=nonstopmode -halt-on-error  $1
 xelatex -interaction=nonstopmode -halt-on-error  $1
 }
 
-pdfcompress ()
-{
-   gs -q -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dPDFSETTINGS=/screen -dEmbedAllFonts=true -dSubsetFonts=true -dColorImageDownsampleType=/Bicubic -dColorImageResolution=144 -dGrayImageDownsampleType=/Bicubic -dGrayImageResolution=144 -dMonoImageDownsampleType=/Bicubic -dMonoImageResolution=144 -sOutputFile=compressed_$1 $1;
-}
 
 
 # Avoid duplicates
@@ -219,38 +215,12 @@ alias bc4="ssh periyasa@bigcuda4"
 alias bc5="ssh periyasa@bigcuda5.informatik.uni-bonn.de"
 
 
-
-
 # add nvidia-top to path
 PATH="$PATH:/home/periyasa/softwares/nvidia-htop/"
 alias gpu-top="nvidia-smi | nvidia-htop.py -cl"
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
-
-
-make_pick_video()
-{
-	rm *.jpg
-	rm *.mp4
-	vid=`printf %06.0f $1`
-	echo "periyasa@bigcuda5.informatik.uni-bonn.de:/home/cache/synpick/train_pick3/$vid/rgb"
-	scp periyasa@bigcuda5.informatik.uni-bonn.de:/home/cache/synpick/train_pick3/$vid/rgb/* .
-	echo "writing video"
-	ffmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -r 30 -pix_fmt yuv420p rgb.mp4
-}
-
-make_move_video()
-{
-	rm *.jpg
-    rm *.mp4
-    vid=`printf %06.0f $1`
-	echo "periyasa@bigcuda5.informatik.uni-bonn.de:/home/cache/synpick/train_move3/$vid/rgb"
-	scp periyasa@bigcuda5.informatik.uni-bonn.de:/home/cache/synpick/train_move3/$vid/rgb/* .
-	echo "writing video"
-	ffmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -r 30 -pix_fmt yuv420p rgb.mp4
-
-}
 
 
 shopt -s histappend
