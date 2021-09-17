@@ -80,8 +80,11 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-
+" https://github.com/sainnhe/sonokai/issues/20
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
 let g:sonokai_style = 'atlantis'
+let g:sonokai_disable_italic_comment = 1
 colorscheme sonokai
 
 " refresh NERDTree automatically
