@@ -220,6 +220,8 @@ if [ "$HOSTNAME" == "flanders"  ]; then
     source activate py3.6
 elif [ "$HOSTNAME" == "cuda12" ]; then
     source activate tracking
+elif [ "$HOSTNAME" == "beast" ]; then
+    source activate py3.8
 fi
 
 alias ccat='pygmentize -g'
