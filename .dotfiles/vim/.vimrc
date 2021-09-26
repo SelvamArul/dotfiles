@@ -21,7 +21,8 @@ Plugin 'easymotion/vim-easymotion' " the most awesome plugin ever!!!
 Plugin 'vim-airline/vim-airline'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
-Plugin 'kh3phr3n/python-syntax'
+Plugin 'jaxbot/semantic-highlight.vim'
+" Plugin 'kh3phr3n/python-syntax'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " vundle setup end
@@ -138,3 +139,5 @@ nnoremap <silent> <Space>b :Buffers<CR>
 let g:fzf_preview_window = 'right:60%'
 nnoremap <c-p> :Files<cr>
 map <C-g> :Ag><CR>
+
+nnoremap <Leader>s :SemanticHighlightToggle<cr>
