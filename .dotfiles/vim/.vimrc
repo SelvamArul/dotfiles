@@ -19,7 +19,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'junegunn/rainbow_parentheses.vim'
 Plugin 'easymotion/vim-easymotion' " the most awesome plugin ever!!!
 Plugin 'vim-airline/vim-airline'
-" Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
