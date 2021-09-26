@@ -21,6 +21,7 @@ Plugin 'easymotion/vim-easymotion' " the most awesome plugin ever!!!
 Plugin 'vim-airline/vim-airline'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
+Plugin 'kh3phr3n/python-syntax'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " vundle setup end
