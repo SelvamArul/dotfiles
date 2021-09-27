@@ -22,6 +22,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'jaxbot/semantic-highlight.vim'
+Plugin 'tpope/vim-fugitive'
 " Plugin 'kh3phr3n/python-syntax'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -141,3 +142,7 @@ nnoremap <c-p> :Files<cr>
 map <C-g> :Ag><CR>
 
 nnoremap <Leader>s :SemanticHighlightToggle<cr>
+
+" fugitive shortcuts
+nnoremap <leader>ys :G<CR>
+nnoremap <leader>yc :Gcommit -v -q<CR>
