@@ -145,4 +145,5 @@ nnoremap <Leader>s :SemanticHighlightToggle<cr>
 
 " fugitive shortcuts
 nnoremap <leader>ys :G<CR>
-nnoremap <leader>yc :Gcommit -v -q<CR>
+nnoremap <leader>yc :Git commit<CR>
+nnoremap <leader>yp :Gti push<CR>
