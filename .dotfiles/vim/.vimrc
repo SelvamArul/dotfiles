@@ -23,6 +23,7 @@ Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'jaxbot/semantic-highlight.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'turbio/bracey.vim'
 " Plugin 'kh3phr3n/python-syntax'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -147,3 +148,6 @@ nnoremap <Leader>s :SemanticHighlightToggle<cr>
 nnoremap <leader>ys :G<CR>
 nnoremap <leader>yc :Git commit<CR>
 nnoremap <leader>yp :Git push<CR>
+
+
+let g:ycm_global_ycm_extra_conf = '$HOME/.ycm_extra_conf.py'
