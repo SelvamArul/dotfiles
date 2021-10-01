@@ -150,4 +150,4 @@ nnoremap <leader>yc :Git commit<CR>
 nnoremap <leader>yp :Git push<CR>
 
 
-let g:ycm_global_ycm_extra_conf = '$HOME/.ycm_extra_conf.py'
+" let g:ycm_global_ycm_extra_conf = '$HOME/.ycm_extra_conf.py'
