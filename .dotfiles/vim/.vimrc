@@ -14,9 +14,9 @@ Plugin 'Valloric/YouCompleteMe'
 " Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'Yggdroot/indentLine'
 Plugin 'sainnhe/sonokai'
-Plugin 'vim-scripts/SyntaxRange'
+" Plugin 'vim-scripts/SyntaxRange'
 Plugin 'tpope/vim-commentary'
-Plugin 'junegunn/rainbow_parentheses.vim'
+" Plugin 'junegunn/rainbow_parentheses.vim'
 Plugin 'easymotion/vim-easymotion' " the most awesome plugin ever!!!
 Plugin 'vim-airline/vim-airline'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
