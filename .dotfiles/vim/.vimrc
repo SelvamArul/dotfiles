@@ -129,9 +129,8 @@ autocmd BufEnter *.tex set concealcursor=n
 " let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 " autocmd FileType * RainbowParentheses
 
-let NERDTreeShowHidden=0
-let g:NERDTreeIgnore = ['\.git$']
-
+" let NERDTreeShowHidden=0
+" let g:NERDTreeIgnore = ['\.git$']
 
 let g:airline_powerline_fonts = 1
 
@@ -151,3 +150,6 @@ nnoremap <leader>yp :Git push<CR>
 
 
 " let g:ycm_global_ycm_extra_conf = '$HOME/.ycm_extra_conf.py'
+" ycm symbol search
+nmap <leader>yfd <Plug>(YCMFindSymbolInDocument)
+nmap <leader>yfw <Plug>(YCMFindSymbolInWorkspace)
