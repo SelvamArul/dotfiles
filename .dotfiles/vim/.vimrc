@@ -24,6 +24,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'jaxbot/semantic-highlight.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'turbio/bracey.vim'
+Plugin 'chrisbra/Recover.vim' "swp file management
 " Plugin 'kh3phr3n/python-syntax'
 call vundle#end()            " required
 filetype plugin indent on    " required
