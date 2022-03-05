@@ -26,6 +26,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'turbio/bracey.vim'
 Plugin 'chrisbra/Recover.vim' "swp file management
 Plugin 'wesQ3/vim-windowswap'
+Plugin 'mhinz/vim-signify'
 " Plugin 'kh3phr3n/python-syntax'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -155,3 +156,6 @@ nnoremap <leader>yp :Git push<CR>
 " ycm symbol search
 nmap <leader>yfd <Plug>(YCMFindSymbolInDocument)
 nmap <leader>yfw <Plug>(YCMFindSymbolInWorkspace)
+
+" signify setting
+set updatetime=150
