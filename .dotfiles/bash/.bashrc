@@ -234,7 +234,7 @@ alias sl="cd /home/periyasa/workspace/stillleben"
 
 alias bc4="ssh periyasa@bigcuda4"
 alias bc5="ssh periyasa@bigcuda5.informatik.uni-bonn.de"
-
+alias bbeast="ssh periyasa@bigbeast"
 
 # add nvidia-top to path
 PATH="$PATH:/home/periyasa/softwares/nvidia-htop/"
