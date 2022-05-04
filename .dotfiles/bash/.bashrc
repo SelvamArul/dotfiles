@@ -219,7 +219,7 @@ shopt -s histappend
 if [ "$HOSTNAME" == "flanders"  ]; then
     source activate py3.6
 elif [ "$HOSTNAME" == "cuda12" ]; then
-    source activate tracking
+    source activate py3.8
 elif [ "$HOSTNAME" == "beast" ]; then
     source activate py3.8
 fi

@@ -27,6 +27,10 @@ Plugin 'turbio/bracey.vim'
 Plugin 'chrisbra/Recover.vim' "swp file management
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'mhinz/vim-signify'
+
+filetype plugin on
+Plugin 'python-rope/ropevim'
+
 " Plugin 'kh3phr3n/python-syntax'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -114,7 +118,9 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 " enable mouse split resizing
 set mouse=n
-set ttymouse=xterm2
+if !has('nvim')
+    set ttymouse=xterm2
+endif
 
 set list
 set listchars=tab:>-
